@@ -1,0 +1,17 @@
+POST http://localhost:8080/cart/{{$random.uuid}}
+
+
+###
+GET http://localhost:8080/cart/2f0e2355-0ae5-4645-858c-a9dbbde9c798
+
+###
+
+POST http://localhost:8080/cart/2f0e2355-0ae5-4645-858c-a9dbbde9c798/item
+Content-Type: application/json
+
+{
+  "id": "{{$random.uuid}}",
+  "name": "Toshiba TV",
+  "price": "15.24",
+  "quantity": 2
+}
